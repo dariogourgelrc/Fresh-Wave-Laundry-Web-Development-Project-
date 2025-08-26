@@ -35,10 +35,7 @@ header {
 #about-div {
     background-color: brown;
     width: 70%;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    align-self: center;
+    margin: 0 auto;
 }
 
 
