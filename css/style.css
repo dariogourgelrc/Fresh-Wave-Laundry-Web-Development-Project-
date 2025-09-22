@@ -1,0 +1,42 @@
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-logo {
+    width: 200px;
+}
+
+.nav {
+    margin-right: 30px;
+}
+
+.review-area {
+            width: 20%;
+            background-color: gray;
+            border-radius: 5px;
+}
+
+.review-d {
+    display: flex;
+    justify-content: space-around;
+}
+
+.imgprofile {
+    width: 200px;
+}
+
+#FAQ-div {
+    text-align: center;
+}
+
+#about-div {
+    background-color: brown;
+    width: 70%;
+    margin: 0 auto;
+}
+
+
+
