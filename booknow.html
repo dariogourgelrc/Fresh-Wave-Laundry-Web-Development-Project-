@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Book Now - Fresh Wave Laundry</title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <header>
-        <img src="./images/logo.png" alt="logo" class="header-logo">
+        <img src="./images/logo.png" alt="logo" class="header-logo" width="200px">
         <nav class="nav">
             <a href="index.html">Home</a>
             <a href="services.html">Services</a>
@@ -19,30 +19,70 @@
         </nav>
     </header>
 
-    <form action="">
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name">
-        <label for="email">E-mail</label>
-        <input type="email" id="email" name="email">
-        <label for="numero">Numero</label>
-        <input type="number" id="numero" name="numero">
-        <label for="washnfold">Wash & Fold</label>
-        <input type="radio" id="washnfold" name="washnfold">
-        <label for="drycleaning">Dry Cleaning</label>
-        <input type="radio" id="drycleaning" name="drycleaning">
-        <label for="ironing">Ironing</label>
-        <input type="radio" id="ironing" name="ironing">
-        <label for="picndelivery">Pick up & Delivery</label>
-        <input type="radio" id="picndelivery" name="picndelivery">
-        <label for="bedding">Bedding</label>
-        <input type="radio" id="bedding" name="bedding">
-        <label for="eco">Eco Options</label>
-        <input type="radio" id="eco" name="eco">
-        <label for="date">Choose a day</label>
-        <input type="date" id="date" name="date">
-        <label for="time">Choose a time</label>
-        <input type="time" id="time" name="time">
-        <input type="submit" value="submits">
-    </form>
+    <div class="booking-container">
+        <h1 class="booking-title">Agende Seu Serviço</h1>
+        <form class="booking-form" action="">
+            <div class="form-group">
+                <label for="name">Nome Completo</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="numero">Telefone</label>
+                <input type="number" id="numero" name="numero" required>
+            </div>
+            
+            <div class="form-group">
+                <label>Selecione os Serviços:</label>
+                <div class="services-options">
+                    <div class="service-option">
+                        <input type="radio" id="washnfold" name="service" value="washnfold">
+                        <label for="washnfold">Wash & Fold</label>
+                    </div>
+                    <div class="service-option">
+                        <input type="radio" id="drycleaning" name="service" value="drycleaning">
+                        <label for="drycleaning">Lavagem a Seco</label>
+                    </div>
+                    <div class="service-option">
+                        <input type="radio" id="ironing" name="service" value="ironing">
+                        <label for="ironing">Passadoria</label>
+                    </div>
+                    <div class="service-option">
+                        <input type="radio" id="picndelivery" name="service" value="picndelivery">
+                        <label for="picndelivery">Coleta & Entrega</label>
+                    </div>
+                    <div class="service-option">
+                        <input type="radio" id="bedding" name="service" value="bedding">
+                        <label for="bedding">Roupas de Cama</label>
+                    </div>
+                    <div class="service-option">
+                        <input type="radio" id="eco" name="service" value="eco">
+                        <label for="eco">Opções Ecológicas</label>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label for="date">Escolha o Dia</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="time">Escolha o Horário</label>
+                <input type="time" id="time" name="time" required>
+            </div>
+            
+            <input type="submit" value="Agendar Serviço" class="submit-btn">
+        </form>
+    </div>
+    
+    <footer>
+        <p>Copyright @ 2023 Fresh Wave</p>
+    </footer>
 </body>
 </html>

@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tracking - Fresh Wave Laundry</title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <header>
-        <img src="./images/logo.png" alt="logo" class="header-logo">
+        <img src="./images/logo.png" alt="logo" class="header-logo" width="200px">
         <nav class="nav">
             <a href="index.html">Home</a>
             <a href="services.html">Services</a>
@@ -18,9 +18,18 @@
             <a href="contact.html">Contact</a>
         </nav>
     </header>
-    <h1>Track your order</h1>
-    <p>Please enter your order number to check your status</p>
-    <input type="number" id="ordernumber" name="ordernumber">
-    <button>CHECK STATUS</button>
+    
+    <div class="tracking-container">
+        <h1 class="tracking-title">Rastreie Seu Pedido</h1>
+        <p class="tracking-description">Digite o código do seu pedido para verificar o status</p>
+        <div class="tracking-form">
+            <input type="text" id="ordernumber" name="ordernumber" class="tracking-input" placeholder="Digite o código do pedido (ex: FW2024001)">
+            <button class="tracking-btn">VERIFICAR STATUS</button>
+        </div>
+    </div>
+    
+    <footer>
+        <p>Copyright @ 2023 Fresh Wave</p>
+    </footer>
 </body>
 </html>

@@ -3,20 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Pricing - Fresh Wave Laundry</title>
     <link rel="stylesheet" href="./css/style.css">
-    <style>
-        table, td, th {
-            border: 1px solid black;
-        }
-        td {
-            text-align: center;
-        }
-    </style>
 </head>
 <body>
     <header>
-        <img src="./images/logo.png" alt="logo" class="header-logo">
+        <img src="./images/logo.png" alt="logo" class="header-logo" width="200px">
         <nav class="nav">
             <a href="index.html">Home</a>
             <a href="services.html">Services</a>
@@ -27,28 +19,39 @@
         </nav>
     </header>
 
-    <div id="table-div">
-        <table>
-            <tr>
-                <th>Wash & Fold</th>
-                <th>Dry Cleaning</th>
-                <th>Ironing</th>
-                <th>Pickup & Delivery</th>
-                <th>Bedding</th>
-                <th>Eco Options</th>
-            </tr>
-            <tr>
-                <td>R1000</td>
-                <td>R1000</td>
-                <td>R1000</td>
-                <td>R1000</td>
-                <td>R1000</td>
-                <td>R1000</td>
-            </tr>
-        </table>
-        <p>information</p>
+    <div class="pricing-container">
+        <h1 class="pricing-title">Nossos Preços</h1>
+        <div class="pricing-table">
+            <table>
+                <tr>
+                    <th>Wash & Fold</th>
+                    <th>Lavagem a Seco</th>
+                    <th>Passadoria</th>
+                    <th>Coleta & Entrega</th>
+                    <th>Roupas de Cama</th>
+                    <th>Opções Ecológicas</th>
+                </tr>
+                <tr>
+                    <td>R$ 15,00/kg</td>
+                    <td>R$ 25,00/peça</td>
+                    <td>R$ 8,00/peça</td>
+                    <td>R$ 10,00</td>
+                    <td>R$ 20,00/conjunto</td>
+                    <td>R$ 18,00/kg</td>
+                </tr>
+            </table>
+        </div>
+        <div class="pricing-action">
+            <a href="booknow.html" class="btn-book-now-pricing">BOOK NOW</a>
+        </div>
+        <div class="pricing-info">
+            <p>Todos os preços são válidos para a região metropolitana. Para outras localidades, consulte nossa equipe.</p>
+            <p>Oferecemos descontos especiais para clientes corporativos e pedidos em grande volume.</p>
+        </div>
     </div>
-
-
+    
+    <footer>
+        <p>Copyright @ 2023 Fresh Wave</p>
+    </footer>
 </body>
 </html>

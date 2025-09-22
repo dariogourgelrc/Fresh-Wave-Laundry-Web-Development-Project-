@@ -38,33 +38,53 @@
             <p>Name</p>
             <p>Comment</p>
         </div>
-        <div class="review-area">
-            <img src="/images/logo.png" alt="profile" class="imgprofile">
-            <p>Name</p>
-            <p>Comment</p>
-        </div>
     </div>
     <h2 style="text-align: center;">FAQ</h2>
     <div class="FAQ-div">
         <div class="FAQ-area">
-            <p>Question</p>
-            <p>Answer</p>
+            <div class="faq-question">
+                <h3>Quais são os horários de funcionamento?</h3>
+                <span class="faq-toggle">+</span>
+            </div>
+            <div class="faq-answer">
+                <p>Funcionamos de segunda a sábado das 7h às 19h, e domingos das 9h às 17h.</p>
+            </div>
         </div>
         <div class="FAQ-area">
-            <p>Question</p>
-            <p>Answer</p>
+            <div class="faq-question">
+                <h3>Quanto tempo leva para lavar e secar as roupas?</h3>
+                <span class="faq-toggle">+</span>
+            </div>
+            <div class="faq-answer">
+                <p>O serviço padrão leva de 24 a 48 horas. Oferecemos também serviço expresso em 4 horas.</p>
+            </div>
         </div>
         <div class="FAQ-area">
-            <p>Question</p>
-            <p>Answer</p>
+            <div class="faq-question">
+                <h3>Vocês fazem coleta e entrega?</h3>
+                <span class="faq-toggle">+</span>
+            </div>
+            <div class="faq-answer">
+                <p>Sim! Oferecemos serviço de coleta e entrega gratuito em um raio de 5km da nossa loja.</p>
+            </div>
         </div>
         <div class="FAQ-area">
-            <p>Question</p>
-            <p>Answer</p>
+            <div class="faq-question">
+                <h3>Quais tipos de roupas vocês lavam?</h3>
+                <span class="faq-toggle">+</span>
+            </div>
+            <div class="faq-answer">
+                <p>Lavamos todos os tipos de roupas: casuais, sociais, esportivas, roupas de cama e cortinas.</p>
+            </div>
         </div>
         <div class="FAQ-area">
-            <p>Question</p>
-            <p>Answer</p>
+            <div class="faq-question">
+                <h3>Como posso acompanhar o status do meu pedido?</h3>
+                <span class="faq-toggle">+</span>
+            </div>
+            <div class="faq-answer">
+                <p>Você pode acompanhar seu pedido através da nossa página de rastreamento ou pelo WhatsApp.</p>
+            </div>
         </div>
     </div>
 
@@ -89,12 +109,58 @@
         </div>
 
         <div class="contact-map">
-            <iframe src="" frameborder="0">Maps</iframe>
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2943.8!2d-72.5914616!3d43.4145061!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDPCsDI0JzUyLjIiTiA3MsKwMzUnMjkuMyJX!5e0!3m2!1sen!2sus!4v1699999999999!5m2!1sen!2sus" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade"
+                title="Localização Cavendish">
+            </iframe>
         </div>
     </div>
     <footer>
         <p>Copyright @ 2023 Fresh Wave</p>
     </footer>
+
+    <script>
+        // FAQ Accordion Functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const faqQuestions = document.querySelectorAll('.faq-question');
+            
+            faqQuestions.forEach(question => {
+                question.addEventListener('click', function() {
+                    const faqArea = this.parentElement;
+                    const answer = faqArea.querySelector('.faq-answer');
+                    const toggle = this.querySelector('.faq-toggle');
+                    
+                    // Close all other FAQ items
+                    faqQuestions.forEach(otherQuestion => {
+                        if (otherQuestion !== question) {
+                            const otherArea = otherQuestion.parentElement;
+                            const otherAnswer = otherArea.querySelector('.faq-answer');
+                            const otherToggle = otherQuestion.querySelector('.faq-toggle');
+                            
+                            otherAnswer.classList.remove('active');
+                            otherToggle.textContent = '+';
+                            otherToggle.style.transform = 'rotate(0deg)';
+                        }
+                    });
+                    
+                    // Toggle current FAQ item
+                    if (answer.classList.contains('active')) {
+                        answer.classList.remove('active');
+                        toggle.textContent = '+';
+                        toggle.style.transform = 'rotate(0deg)';
+                    } else {
+                        answer.classList.add('active');
+                        toggle.textContent = '−';
+                        toggle.style.transform = 'rotate(180deg)';
+                    }
+                });
+            });
+        });
+    </script>
 
 </body>
 </html>
