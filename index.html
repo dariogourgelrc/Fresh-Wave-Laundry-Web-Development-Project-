@@ -3,12 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fresh Wave Laundry - Professional Laundry Services</title>
     <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/script.js" defer></script>
 </head>
 <body>
     <header>
-        <img src="./images/logo.png" alt="logo" class="header-logo" width="200px">
+        <img src="./images/logo.png" 
+             srcset="./images/logo.png 1x, ./images/logo.png 2x" 
+             sizes="(max-width: 768px) 150px, 200px"
+             alt="logo" 
+             class="header-logo">
         <nav class="nav">
             <a href="index.html">Home</a>
             <a href="services.html">Services</a>
@@ -17,92 +22,117 @@
             <a href="tracking.html">Tracking</a>
             <a href="contact.html">Contact</a>
         </nav>
+        <button class="hamburger-menu" id="hamburger-menu" aria-label="Toggle navigation">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+        </button>
     </header>
     <div class="hero-section">
-        <img src="./images/logo.png" alt="" id="banner-img">
+        <img src="./images/logo.png" 
+             srcset="./images/logo.png 1x, ./images/logo.png 2x" 
+             sizes="(max-width: 576px) 300px, (max-width: 768px) 400px, 500px"
+             alt="Fresh Wave Laundry Banner" 
+             id="banner-img">
     </div>
-        <h2>Reviews</h2>
+        <h2 class="section-header">Reviews</h2>
     <div class="review-div">
         <div class="review-area">
-            <img src="/images/logo.png" alt="profile" class="imgprofile">
+            <img src="images/logo.png" 
+                 srcset="images/logo.png 1x, images/logo.png 2x" 
+                 sizes="(max-width: 576px) 80px, 100px"
+                 alt="Customer Profile" 
+                 class="imgprofile">
             <p>Name</p>
-            <p>Comment</p>
+            <p>Great service! My clothes came back spotless and smelling fresh.</p>
         </div>
         <div class="review-area">
-            <img src="/images/logo.png" alt="profile" class="imgprofile">
+            <img src="images/logo.png" 
+                 srcset="images/logo.png 1x, images/logo.png 2x" 
+                 sizes="(max-width: 576px) 80px, 100px"
+                 alt="Customer Profile" 
+                 class="imgprofile">
             <p>Name</p>
-            <p>Comment</p>
+            <p>Fast and reliable. I've been using Fresh Wave for months now.</p>
         </div>
         <div class="review-area">
-            <img src="/images/logo.png" alt="profile" class="imgprofile">
+            <img src="images/logo.png" 
+                 srcset="images/logo.png 1x, images/logo.png 2x" 
+                 sizes="(max-width: 576px) 80px, 100px"
+                 alt="Customer Profile" 
+                 class="imgprofile">
             <p>Name</p>
             <p>Comment</p>
         </div>
     </div>
-    <h2 style="text-align: center;">FAQ</h2>
+    <h2 class="faq-title">FAQ</h2>
     <div class="FAQ-div">
         <div class="FAQ-area">
             <div class="faq-question">
-                <h3>Quais são os horários de funcionamento?</h3>
+                <h3>What are your operating hours?</h3>
                 <span class="faq-toggle">+</span>
             </div>
             <div class="faq-answer">
-                <p>Funcionamos de segunda a sábado das 7h às 19h, e domingos das 9h às 17h.</p>
+                <p>We operate Monday to Saturday from 7am to 7pm, and Sundays from 9am to 5pm.</p>
             </div>
         </div>
         <div class="FAQ-area">
             <div class="faq-question">
-                <h3>Quanto tempo leva para lavar e secar as roupas?</h3>
+                <h3>How long does it take to wash and dry clothes?</h3>
                 <span class="faq-toggle">+</span>
             </div>
             <div class="faq-answer">
-                <p>O serviço padrão leva de 24 a 48 horas. Oferecemos também serviço expresso em 4 horas.</p>
+                <p>Our standard service takes 24 to 48 hours. We also offer express service in 4 hours.</p>
             </div>
         </div>
         <div class="FAQ-area">
             <div class="faq-question">
-                <h3>Vocês fazem coleta e entrega?</h3>
+                <h3>Do you offer pickup and delivery?</h3>
                 <span class="faq-toggle">+</span>
             </div>
             <div class="faq-answer">
-                <p>Sim! Oferecemos serviço de coleta e entrega gratuito em um raio de 5km da nossa loja.</p>
+                <p>Yes! We offer free pickup and delivery service within a 5km radius of our store.</p>
             </div>
         </div>
         <div class="FAQ-area">
             <div class="faq-question">
-                <h3>Quais tipos de roupas vocês lavam?</h3>
+                <h3>What types of clothes do you wash?</h3>
                 <span class="faq-toggle">+</span>
             </div>
             <div class="faq-answer">
-                <p>Lavamos todos os tipos de roupas: casuais, sociais, esportivas, roupas de cama e cortinas.</p>
+                <p>We wash all types of clothing: casual, formal, sportswear, bedding and curtains.</p>
             </div>
         </div>
         <div class="FAQ-area">
             <div class="faq-question">
-                <h3>Como posso acompanhar o status do meu pedido?</h3>
+                <h3>How can I track the status of my order?</h3>
                 <span class="faq-toggle">+</span>
             </div>
             <div class="faq-answer">
-                <p>Você pode acompanhar seu pedido através da nossa página de rastreamento ou pelo WhatsApp.</p>
+                <p>You can track your order through our tracking page or via WhatsApp.</p>
             </div>
         </div>
     </div>
 
-    <h2 style="text-align: center;">About Fresh Wave</h2>
+    <h2 class="about-title">About Fresh Wave</h2>
     <div class="about-div">
-        <img src="./images/logo.png" alt="logo">
+        <img src="./images/logo.png" 
+             srcset="./images/logo.png 1x, ./images/logo.png 2x" 
+             sizes="(max-width: 576px) 150px, (max-width: 768px) 200px, 250px"
+             alt="Fresh Wave Laundry Logo" 
+             class="img-responsive">
         <div class="about-content">
-            <h1>Tiitle</h1>
-            <p>About Content</p>
+            <h1>About Fresh Wave Laundry</h1>
+            <p>Fresh Wave Laundry is your trusted partner for professional laundry services. With years of experience and state-of-the-art equipment, we ensure your clothes receive the best care possible. Our eco-friendly approach and attention to detail make us the preferred choice for quality laundry services.</p>
         </div>
     </div>
 
     <h2>Contact</h2>
     <div class="contact-div">
         <div class="contact-content">
-            <p>Adress</p>
-            <p>Email</p>
-            <p>Number</p>
+            <p>123 Main Street, Cape Town, South Africa</p>
+            <p>info@freshwavelaundry.co.za</p>
+            <p>+27 21 123 4567</p>
             <h2>Social Media</h2>
             <a href="">Instagram</a>
             <a href="">Facebook</a>
@@ -111,11 +141,11 @@
         <div class="contact-map">
             <iframe 
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2943.8!2d-72.5914616!3d43.4145061!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDPCsDI0JzUyLjIiTiA3MsKwMzUnMjkuMyJX!5e0!3m2!1sen!2sus!4v1699999999999!5m2!1sen!2sus" 
-                style="border:0;" 
+                class="contact-iframe"
                 allowfullscreen="" 
                 loading="lazy" 
                 referrerpolicy="no-referrer-when-downgrade"
-                title="Localização Cavendish">
+                title="Fresh Wave Laundry Location">
             </iframe>
         </div>
     </div>
