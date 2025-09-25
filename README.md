@@ -75,10 +75,49 @@ Reviews
 FAQ/Blog
 
 Changelog
+Part 1
 
-Initial Version (Week 1-2): Completed project planning, requirements, and wireframes.
+Researched laundry and car dealership websites.
 
-Planned Updates: Add interactivity (JavaScript), deploy to Netlify, and integrate booking form.
+Selected the 5 best sites and identified common elements.
+
+Highlighted interesting features to apply to my own project.
+
+Researched business goals in this niche and determined how a website can achieve those objectives.
+
+Created wireframes for all pages.
+
+Designed the sitemap after completing wireframes.
+
+Finalized the documentation part of the project.
+
+Started development of project files: created pages and applied HTML elements.
+
+Completed the HTML content for each page.
+
+Created a GitHub repository and committed the project.
+
+Wrote the README file.
+
+Part 2
+
+Reviewed feedback from Part 1 and confirmed no major changes were required in the main documentation.
+
+Improved the GitHub side of the project by writing a more detailed and robust changelog.
+
+Updated and refined the sitemap.
+
+Started working on the CSS: defined global styles (colors, margins, paddings, sizes, etc.).
+
+Adjusted layout and aligned elements across all pages.
+
+Added necessary JavaScript scripts to enhance functionality.
+
+Revised CSS again to apply best practices.
+
+Focused on mobile responsiveness and ensured proper display on different devices.
+
+Completed the project with a final push to the GitHub repository.
 
 Budget
 
